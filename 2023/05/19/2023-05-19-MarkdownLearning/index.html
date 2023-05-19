@@ -87,14 +87,19 @@
         <h1 id="Markdown-标记语言"><a href="#Markdown-标记语言" class="headerlink" title="Markdown 标记语言"></a>Markdown 标记语言</h1><p><a target="_blank" rel="noopener" href="https://markdown.com.cn/basic-syntax/">Markdown</a>标记语言使人们可以摆脱杂乱的html文本，对于简单的个人博客类静态网页来说非常适用，相应的编辑软件<a target="_blank" rel="noopener" href="https://typoraio.cn/">Typora</a>更是把这种极简风格发挥得淋漓尽至，在书写过程中甚至不太能感到自己在编辑网页。</p>
 <p>Markdown的基本语法也是很简单易学的。这里是Markdown的官方教程文档：<a target="_blank" rel="noopener" href="https://markdown.com.cn/basic-syntax/">https://markdown.com.cn/basic-syntax/</a></p>
 <h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p> 1-6号标题分别为在文字前面添加1到6个 # 号，文字前要留一个英文空格。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> 	<span class="comment"># 1号标题</span></span><br><span class="line"><span class="number">2</span> 	<span class="comment">## 2号标题</span></span><br><span class="line"><span class="number">3</span>   <span class="comment">## 6号标题</span></span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># 1号标题</span>
+<span class="token comment">## 2号标题</span>
+<span class="token comment">## 6号标题</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <h1 id="1号标题"><a href="#1号标题" class="headerlink" title="1号标题"></a>1号标题</h1><h2 id="2号标题"><a href="#2号标题" class="headerlink" title="2号标题"></a>2号标题</h2><h3 id="3号标题"><a href="#3号标题" class="headerlink" title="3号标题"></a>3号标题</h3><h2 id="粗体（Bold"><a href="#粗体（Bold" class="headerlink" title="粗体（Bold)"></a>粗体（Bold)</h2><p>在要加粗的字两侧加 ** 或 _ _ </p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> 	这是**重要**的内容</span><br><span class="line"><span class="number">2</span> 	这是__重要__的内容</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">这是<span class="token operator">**</span>重要<span class="token operator">**</span>的内容
+这是__重要__的内容<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p>这是<strong>重要</strong>的内容<br>这是__重要__的内容</p>
 <h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p>文字前加 &gt; ,可以加很多级。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> &gt; 被引用的内容</span><br><span class="line"><span class="number">2</span> &gt;&gt; 二级引用的内容</span><br><span class="line"><span class="number">3</span> &gt;&gt;&gt; 三级引用的内容</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token operator">></span> 被引用的内容
+<span class="token operator">>></span> 二级引用的内容
+<span class="token operator">>></span><span class="token operator">></span> 三级引用的内容<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <blockquote>
 <p>被引用的内容</p>
@@ -106,7 +111,11 @@
 </blockquote>
 </blockquote>
 <h2 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h2><p>直接以1. 开始一句话</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> <span class="number">1.</span> 我先做饭</span><br><span class="line"><span class="number">2</span> <span class="number">2.</span> 我再吃饭</span><br><span class="line"><span class="number">3</span> 	<span class="number">1.</span> 我先吃肉</span><br><span class="line"><span class="number">4</span>	<span class="number">2.</span> 我不吃菜</span><br><span class="line"><span class="number">5</span> <span class="number">3.</span> 我后洗碗</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token number">1.</span> 我先做饭
+<span class="token number">2.</span> 我再吃饭
+	<span class="token number">1.</span> 我先吃肉
+	<span class="token number">2.</span> 我不吃菜
+<span class="token number">3.</span> 我后洗碗<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <ol>
 <li><p>我先做饭</p>
@@ -121,7 +130,11 @@
 </li>
 </ol>
 <h2 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h2><p>以 * 或 + 或 - 引导文本</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> * 我先做饭</span><br><span class="line"><span class="number">2</span> + 我再吃饭</span><br><span class="line"><span class="number">3</span> 	- 我先吃肉</span><br><span class="line"><span class="number">4</span>	+ 我不吃菜</span><br><span class="line"><span class="number">5</span> + 我后洗碗</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token operator">*</span> 我先做饭
+<span class="token operator">+</span> 我再吃饭
+	<span class="token operator">-</span> 我先吃肉
+	<span class="token operator">+</span> 我不吃菜
+<span class="token operator">+</span> 我后洗碗<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <ul>
 <li>我先做饭</li>
@@ -134,6 +147,18 @@
 <ul>
 <li>我后洗碗</li>
 </ul>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">#a</span>
+<span class="token comment">#fadf</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+
+
+
+
+
+
+
 
     </div>
 
