@@ -30,6 +30,120 @@
 
 <meta name="generator" content="Hexo 6.3.0"></head>
     
+    <style>
+        :root {
+            --waline-theme-color: #000000; 
+            --waline-color: #000000; 
+            --waline-border-color: #000000; 
+            --waline-white: #000000; 
+            --waline-bgcolor-light: #ffffff;  
+        }
+        body {
+            color: #000000;
+            background: #e4e4e4;
+        }
+        .post-md code {
+            background: black;
+            color: white; 
+        }
+        .wl-card span.wl-nick {
+            color: #000000; 
+        }
+        .wl-card .wl-badge {
+            border: 1px solid #000000;
+            color: #000000; 
+        }
+        .wl-btn {
+            border: 1px solid #000000; 
+            color:  #000000;  
+        }
+        .wl-btn.primary {
+            color: #ffffff; 
+        }
+        .wl-header label {
+            color: #000000;
+        }
+        a {
+            color: #000000;
+        }
+
+        .post-md a {
+            color: #000000;
+        }
+
+        .nav li a {
+            color: #000000;
+        }
+
+        .archive-main a:link {
+            color: #000000;
+        }
+
+        .archive li span {
+            color: #000000;
+        }
+
+        .post-main-title {
+            color: #000000;
+        }
+
+        .post-md h1,
+        .post-md h2,
+        .post-md h3,
+        .post-md h4,
+        .post-md h5,
+        .post-md h6 {
+            color: #000000;
+        }
+
+        [data-waline] p {
+            color: #000000;
+        }
+        [data-waline] a {
+            color: #000000;
+        } 
+        .wl-sort li.active {
+            color: #000000;
+        }
+
+        .wl-card .wl-meta>span {
+            background: #ffffff;
+        }
+
+        .paper {
+            background: #e4e4e4;
+        }
+
+        .index-main {
+            background: #ffffff;
+        }
+
+        .paper-main {
+            background: #ffffff;
+        }
+
+        .wl-panel {
+            background: #ffffff;
+        }
+
+        .archive li:nth-child(odd) {
+            background: #ffffff;
+            ;
+        }
+
+        .archive li:nth-child(even) {
+            background: #ffffff;
+        }
+
+        .post-md>table tr:nth-child(odd) td {
+            background: #ffffff;
+        }
+
+        .post-md>table tr:nth-child(even) td {
+            background: #ffffff;
+        }
+    </style>
+
     <body>
         <div class="paper">
             
@@ -83,7 +197,7 @@
 
     <div class="post-md">
         
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Markdown-%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80"><span class="post-toc-text">Markdown 标记语言</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%A0%87%E9%A2%98"><span class="post-toc-text">标题</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#1%E5%8F%B7%E6%A0%87%E9%A2%98"><span class="post-toc-text">1号标题</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2%E5%8F%B7%E6%A0%87%E9%A2%98"><span class="post-toc-text">2号标题</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3%E5%8F%B7%E6%A0%87%E9%A2%98"><span class="post-toc-text">3号标题</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E7%B2%97%E4%BD%93%EF%BC%88Bold"><span class="post-toc-text">粗体（Bold)</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%BC%95%E7%94%A8"><span class="post-toc-text">引用</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="post-toc-text">有序列表</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="post-toc-text">无序列表</span></a></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Markdown-%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80"><span class="post-toc-text">Markdown 标记语言</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%A0%87%E9%A2%98"><span class="post-toc-text">标题</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#1%E5%8F%B7%E6%A0%87%E9%A2%98"><span class="post-toc-text">1号标题</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2%E5%8F%B7%E6%A0%87%E9%A2%98"><span class="post-toc-text">2号标题</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3%E5%8F%B7%E6%A0%87%E9%A2%98"><span class="post-toc-text">3号标题</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E7%B2%97%E4%BD%93%EF%BC%88Bold"><span class="post-toc-text">粗体（Bold)</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%BC%95%E7%94%A8"><span class="post-toc-text">引用</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="post-toc-text">有序列表</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="post-toc-text">无序列表</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="post-toc-text">代码块</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E7%AE%80%E5%8D%95%E5%B1%80%E9%83%A8%E4%BB%A3%E7%A0%81"><span class="post-toc-text">简单局部代码</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E5%9B%B4%E6%A0%8F%E5%BC%8F%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="post-toc-text">围栏式代码块</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%88%86%E9%9A%94%E7%BA%BF"><span class="post-toc-text">分隔线</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E9%93%BE%E6%8E%A5"><span class="post-toc-text">链接</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%9B%BE%E7%89%87"><span class="post-toc-text">图片</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E8%BD%AC%E4%B9%89%E7%AC%A6"><span class="post-toc-text">转义符</span></a></li></ol></li></ol>
         
         <h1 id="Markdown-标记语言"><a href="#Markdown-标记语言" class="headerlink" title="Markdown 标记语言"></a>Markdown 标记语言</h1><p><a target="_blank" rel="noopener" href="https://markdown.com.cn/basic-syntax/">Markdown</a>标记语言使人们可以摆脱杂乱的html文本，对于简单的个人博客类静态网页来说非常适用，相应的编辑软件<a target="_blank" rel="noopener" href="https://typoraio.cn/">Typora</a>更是把这种极简风格发挥得淋漓尽至，在书写过程中甚至不太能感到自己在编辑网页。</p>
 <p>Markdown的基本语法也是很简单易学的。这里是Markdown的官方教程文档：<a target="_blank" rel="noopener" href="https://markdown.com.cn/basic-syntax/">https://markdown.com.cn/basic-syntax/</a></p>
@@ -94,7 +208,7 @@
 </code></pre>
 <h1 id="1号标题"><a href="#1号标题" class="headerlink" title="1号标题"></a>1号标题</h1><h2 id="2号标题"><a href="#2号标题" class="headerlink" title="2号标题"></a>2号标题</h2><h3 id="3号标题"><a href="#3号标题" class="headerlink" title="3号标题"></a>3号标题</h3><h2 id="粗体（Bold"><a href="#粗体（Bold" class="headerlink" title="粗体（Bold)"></a>粗体（Bold)</h2><p>在要加粗的字两侧加 ** 或 _ _ </p>
 <pre><code class="python">这是**重要**的内容
-这是__重要__的内容
+这是 __重要__ 的内容 #因为每个平台不同可能需要在前后加一个空格，但这样渲染之后会有空格，还是建议用**保险
 </code></pre>
 <p>这是<strong>重要</strong>的内容<br>这是__重要__的内容</p>
 <h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p>文字前加 &gt; ,可以加很多级。</p>
@@ -148,11 +262,145 @@
 <ul>
 <li>我后洗碗</li>
 </ul>
-<pre><code class="python">#a
-#fadf
-#2424 
-1 
+<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><h3 id="简单局部代码"><a href="#简单局部代码" class="headerlink" title="简单局部代码"></a>简单局部代码</h3><p>把代码以单上标括起来</p>
+<pre><code class="python">I need to `print` this page.
 </code></pre>
+<p>I need to <code>print</code> this page.</p>
+<p>把代码以双上标括起来，注意不是双引号，这样内部也出现单上标符号。</p>
+<pre><code class="python">I need to ``print `this` page``.
+</code></pre>
+<p>I need to <code>print `this` page</code>.</p>
+<h3 id="围栏式代码块"><a href="#围栏式代码块" class="headerlink" title="围栏式代码块"></a>围栏式代码块</h3><p>连续三个单上标&#96;或三个波浪号~，指定所用的语言后可以支持语法高亮。如果使用了hexo及应用了某种主题则需要在 _config.yml 中打开语法高亮的设置。</p>
+<p>highlight: </p>
+<p>​	enable: false #要高亮的话要改成 true</p>
+<pre><code class="python">第一行
+第二行
+第三行
+</code></pre>
+<h2 id="分隔线"><a href="#分隔线" class="headerlink" title="分隔线"></a>分隔线</h2><p>三个星号，三个存折号或三个下划线</p>
+<pre><code class="python">***
+---
+___
+</code></pre>
+<hr>
+<hr>
+<hr>
+<p>为了兼容性，在分隔线行的前后均添加空白行</p>
+<pre><code>前面加一个空白行
+
+***
+
+后面也加一个空白行
+</code></pre>
+<p>前面加一个空白行</p>
+<hr>
+<p>后面也加一个空白行.</p>
+<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p>超链接Markdown语法代码：<code>[超链接显示名](超链接地址 &quot;超链接title&quot;)</code></p>
+<p>对应的HTML代码：<code>&lt;a href=&quot;超链接地址&quot; title=&quot;超链接title&quot;&gt;超链接显示名&lt;/a&gt;</code></p>
+<pre><code>这是一个[超链接](https://www.google.com)。
+</code></pre>
+<p>这是一个<a target="_blank" rel="noopener" href="https://www.google.com/">超链接</a>。</p>
+<pre><code>这是一个[超链接](https://www.google.com &quot;谷歌&quot;)。
+</code></pre>
+<p>这是一个<a target="_blank" rel="noopener" href="https://www.google.com/" title="谷歌">超链接</a>。</p>
+<p>对于网址和邮箱可以直接用&lt;&gt;包围</p>
+<pre><code class="text">&lt;https://markdown.com.cn&gt;
+&lt;fake@example.com&gt;
+</code></pre>
+<p><a target="_blank" rel="noopener" href="https://markdown.com.cn/">https://markdown.com.cn</a><br><a href="mailto:&#x66;&#97;&#x6b;&#101;&#64;&#101;&#120;&#97;&#x6d;&#x70;&#x6c;&#x65;&#x2e;&#x63;&#x6f;&#x6d;">&#x66;&#97;&#x6b;&#101;&#64;&#101;&#120;&#97;&#x6d;&#x70;&#x6c;&#x65;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
+<pre><code class="python">I love supporting the **[EFF](https://eff.org)**. # **代表加粗
+This is the *[Markdown Guide](https://www.markdownguide.org)*.# *代表斜体
+See the section on [`code`](#code). #这句话的意思是代码格式的code链接到一级标题code上
+返回到 **[home](#Markdown%20标记语言)** #空格要用%20代替
+</code></pre>
+<p>I love supporting the <strong><a target="_blank" rel="noopener" href="https://eff.org/">EFF</a></strong>.<br>This is the <em><a target="_blank" rel="noopener" href="https://www.markdownguide.org/">Markdown Guide</a></em>.<br>See the section on <a href="#code"><code>code</code></a>.</p>
+<p>返回到 <strong><a href="#Markdown%20%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80">home</a></strong></p>
+<p>不同的 Markdown 应用程序处理URL中间的空格方式不一样。为了兼容性，请尽量使用%20代替空格。</p>
+<pre><code>[https://www.example.com/my great page](https://www.example.com/my%20great%20page)
+</code></pre>
+<p><a target="_blank" rel="noopener" href="https://www.example.com/my%20great%20page">https://www.example.com/my great page</a></p>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>插入图片Markdown语法代码：<code>![图片alt](图片链接 &quot;图片title&quot;)</code>。</p>
+<p>对应的HTML代码：<code>&lt;img src=&quot;图片链接&quot; alt=&quot;图片alt&quot; title=&quot;图片title&quot;&gt;</code></p>
+<pre><code>![图片的注释](./img/image-20230522112053320.png &quot;鼠标悬停时显示的内容&quot;)
+</code></pre>
+<p><img src="/./../img/image-20230522112053320.png" alt="图片的注释"></p>
+<p>还可以把图片做成一个链接</p>
+<pre><code>[![图片的注释](./img/image-20230522112053320.png &quot;鼠标悬停时显示的内容&quot;)](https://www.bing.com/images/search?q=%e7%ba%a2%e8%89%b2%e9%a9%ac%e8%b5%9b%e5%85%8b%e5%a2%99&amp;FORM=HDRSC3)
+</code></pre>
+<p><a target="_blank" rel="noopener" href="https://www.bing.com/images/search?q=%E7%BA%A2%E8%89%B2%E9%A9%AC%E8%B5%9B%E5%85%8B%E5%A2%99&FORM=HDRSC3"><img src="/./../img/image-20230522112053320.png" alt="图片的注释" title="鼠标悬停时显示的内容"></a></p>
+<h2 id="转义符"><a href="#转义符" class="headerlink" title="转义符"></a>转义符</h2><pre><code class="text">\* Without the backslash, this would be a bullet in an unordered list.
+</code></pre>
+<p>有反斜线</p>
+<p>* Without the backslash, this would be a bullet in an unordered list.</p>
+<p>没有反斜线</p>
+<ul>
+<li>Without the backslash, this would be a bullet in an unordered list.</li>
+</ul>
+<p>以下列出的字符都可以通过使用反斜杠字符 \ 达到转义目的。</p>
+<table>
+<thead>
+<tr>
+<th>Character</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>\</td>
+<td>backslash</td>
+</tr>
+<tr>
+<td>&#96;</td>
+<td>backtick (see also <a target="_blank" rel="noopener" href="https://markdown.com.cn/basic-syntax/escaping-characters.html#escaping-backticks">escaping backticks in code</a>)</td>
+</tr>
+<tr>
+<td>*</td>
+<td>asterisk</td>
+</tr>
+<tr>
+<td>_</td>
+<td>underscore</td>
+</tr>
+<tr>
+<td>{ }</td>
+<td>curly braces</td>
+</tr>
+<tr>
+<td>[ ]</td>
+<td>brackets</td>
+</tr>
+<tr>
+<td>( )</td>
+<td>parentheses</td>
+</tr>
+<tr>
+<td>#</td>
+<td>pound sign</td>
+</tr>
+<tr>
+<td>+</td>
+<td>plus sign</td>
+</tr>
+<tr>
+<td>-</td>
+<td>minus sign (hyphen)</td>
+</tr>
+<tr>
+<td>.</td>
+<td>dot</td>
+</tr>
+<tr>
+<td>!</td>
+<td>exclamation mark</td>
+</tr>
+<tr>
+<td>|</td>
+<td>pipe (see also <a target="_blank" rel="noopener" href="https://markdown.com.cn/extended-syntax/escaping-pipe-characters-in-tables.html">escaping pipe in tables</a>)</td>
+</tr>
+</tbody></table>
+<p>#</p>
+<p>[]</p>
+<p>()</p>
+<p>|</p>
 
     </div>
 
@@ -179,7 +427,7 @@
                     <div class="footer">
     
         <span> 
-            © 1949-2025 China 
+            © 1949-2023 China 
 
             
                 
@@ -193,7 +441,7 @@
     
         <span style="border-top: 1px solid var(--line-1); margin-top: -30px;"></span>
         <div style="display: float;">
-            <span style="float: left; font-size: 10px;">🌊看过大海的人不会忘记海的广999阔🌊</span>
+            <span style="float: left; font-size: 10px;">🌊看过大海的人不会忘记海的广阔🌊</span>
             
                 <span class="footer-last-span-right"><i>本站由<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/index.html">Hexo</a>驱动｜使用<a target="_blank" rel="noopener" href="https://github.com/HiNinoJay/hexo-theme-A4">Hexo-theme-A4</a>主题</i></span>
             
