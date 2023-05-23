@@ -105,7 +105,7 @@
 <hr>
 <h2 id="Hexo建站"><a href="#Hexo建站" class="headerlink" title="Hexo建站"></a>Hexo建站</h2><pre><code class="shell">$ hexo init &lt;folder&gt;	#在要建博客的文件夹用hexo初始化，本质是从某个github仓库里拉取文件
 $ cd &lt;folder&gt;			#进入该文件夹
-$ npm install			#"npm install"是NodeQ Package Manager(npm)的一个命令，用于在项目中安装所需的依赖包。它会读取项目目录中的"package.json"文件，并从npm registry下载定义的依赖包。在项目中使用依赖包的代码之前，通常需要先运行"npm instal"命令。
+$ npm install			#"npm install"是Node Package Manager(npm)的一个命令，用于在项目中安装所需的依赖包。它会读取项目目录中的"package.json"文件，并从npm registry下载定义的依赖包。在项目中使用依赖包的代码之前，通常需要先运行"npm instal"命令。
 </code></pre>
 <p><code>hexo init</code>完成后，指定文件夹的目录如下：</p>
 <pre><code>.
@@ -123,7 +123,7 @@ $ npm install			#"npm install"是NodeQ Package Manager(npm)的一个命令，用
   "version": "0.0.0",
   "private": true,
   "scripts": {								
-      #定义调用函数的名称，也即只有运行了npm install之后，你再键入 hexo g才会运行相应函数
+    # 定义调用函数的名称，也即只有运行了npm install之后，你再键入 hexo g才会运行相应函数
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
@@ -133,7 +133,7 @@ $ npm install			#"npm install"是NodeQ Package Manager(npm)的一个命令，用
     "version": ""
   },
   "dependencies": {							
-      #定义依赖关系
+    # 定义依赖关系
     "hexo": "^6.3.0",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
@@ -166,22 +166,23 @@ $ npm install			#"npm install"是NodeQ Package Manager(npm)的一个命令，用
 <hr>
 <h2 id="Hexo的配置"><a href="#Hexo的配置" class="headerlink" title="Hexo的配置"></a>Hexo的配置</h2><p>对Hexo的配置主要是对<code>_config.yml</code>文件的配置。</p>
 <p>Hexo默认不使用主题，当使用主题时需要做以下修改：</p>
-<pre><code class="."># Extensions
+<pre><code class="shell"># Extensions
 theme: A4	#默认是false		
 # 本博客采用的主题名为A4，当安装主题后，网站根目录下的_config.a4.yml里的配置文件会代替或补充_config.yml文件中的相应参数
 </code></pre>
-<p>可以说配置是使用Hexo建立网站的核心，你必须理解里面的各个参数才可能做到对网站自由的修改，而要实现这个目的，需要花一定时间仔细阅读上面链接里的<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/configuration"><code>说明文档</code></a>，如果应用了主题，还要阅读主题的说明文档，麻烦的是，很多时候读了也未必能明确某个参数是什么意思，这时需要补充做一些测试才行。</p>
+<p>可以说配置是使用Hexo建立网站的核心，你必须理解里面的各个参数才可能做到对网站自由的修改，而要实现这个目的，需要花一定时间仔细阅读<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/configuration"><code>说明文档</code></a>，如果应用了主题，还要阅读<a target="_blank" rel="noopener" href="https://github.com/HiNinoJay/hexo-theme-A4"><code>主题的说明文档</code></a>，麻烦的是，很多时候读了也未必能明确某个参数是什么意思，这时需要补充做一些测试才行。</p>
 <hr>
 <h2 id="Hexo的主要指令"><a href="#Hexo的主要指令" class="headerlink" title="Hexo的主要指令"></a>Hexo的主要指令</h2><p><code>_config.yml</code>文件中有以下参数：</p>
-<pre><code class="."># Writing
+<pre><code class="shell"># Writing
 default_layout: post
 </code></pre>
-<h3 id="新建页面"><a href="#新建页面" class="headerlink" title="新建页面"></a>新建页面</h3><pre><code># 新建一篇文章。如果没有设置 [layout] 的话，默认使用 _config.yml中的default_layout参数代替。
+<h3 id="新建页面"><a href="#新建页面" class="headerlink" title="新建页面"></a>新建页面</h3><pre><code class="shell"># 新建一篇文章。如果没有设置 [layout] 的话，默认使用 _config.yml中的default_layout参数代替。
 $ hexo new [layout] &lt;title&gt;
 
-# 所以如果写成这样命令的含义是一样的
+# 所以如果写成这样,命令的含义是一样的
 $ hexo new &lt;title&gt;
-# 如果标题包含空格的话，请使用引号括起来。
+# 如果标题包含空格的话，请使用引号括起来，像这样
+$ hexo new "this is a post"
 
 # 新建一篇post文章,程序会到scaffolds文件夹下寻找模板post.md,建立title.md并保存到source文件夹中
 $ hexo new post &lt;titile&gt;
@@ -196,29 +197,29 @@ $ hexo new draft &lt;titile&gt;
 $ hexo new photo &lt;titile&gt;
 </code></pre>
 <p><code>_config.yml</code>文件中有以下参数控制生成的网页名：</p>
-<pre><code class="."># Writing
+<pre><code class="shell"># Writing
 #默认生成"title.md"这样的文件名
 new_post_name: :title.md
 #若想生成"2023-05-19-title.md"这样的文件名可以修改参数为
 new_post_name: :year-:month-:day-:title.md
 </code></pre>
-<h3 id="clean"><a href="#clean" class="headerlink" title="clean"></a>clean</h3><pre><code>$ hexo clean
+<h3 id="clean"><a href="#clean" class="headerlink" title="clean"></a>clean</h3><pre><code class="shell">$ hexo clean
 </code></pre>
 <p>清除缓存文件 (<code>db.json</code>) 和已生成的静态文件目录 (<code>\public</code>)。</p>
-<h3 id="generate"><a href="#generate" class="headerlink" title="generate"></a>generate</h3><pre><code>$ hexo generate
+<h3 id="generate"><a href="#generate" class="headerlink" title="generate"></a>generate</h3><pre><code class="shell">$ hexo generate
 # generate可以简化成g
 $ hexo g
 </code></pre>
 <p>生成静态文件，并保存到public文件夹中。</p>
-<h3 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h3><pre><code>$ hexo deploy
+<h3 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h3><pre><code class="shell">$ hexo deploy
 # deploy可以简化成d
 $ hexo d
 </code></pre>
 <p>将public文件夹下的静态页面部署网站到github。</p>
 <p>上述命令可以也合并执行：</p>
-<pre><code class="$">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d
+<pre><code class="shell">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d
 </code></pre>
-<h3 id="server"><a href="#server" class="headerlink" title="server"></a>server</h3><pre><code>$ hexo server
+<h3 id="server"><a href="#server" class="headerlink" title="server"></a>server</h3><pre><code class="shell">$ hexo server
 # sever可以简化成s
 $ hexo s
 </code></pre>
