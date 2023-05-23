@@ -3,7 +3,7 @@
     <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  viewport-fit=cover" name="viewport" />
-    <meta name="description" content="test" />
+    <meta name="description" content="亚马逊AWS实例无法ping通的解决方法" />
     <link rel="alternate icon" type="image/webp" href="/img/favicon.webp">
     <title>Note it all | Just note it</title>
 
@@ -78,16 +78,46 @@
 
     
         <div class="post-main-title">
-            test
+            亚马逊AWS实例无法ping通的解决方法
         </div>
       
     
 
     <div class="post-md">
         
-            
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E4%BA%9A%E9%A9%AC%E9%80%8AAWS%E5%AE%9E%E4%BE%8B%E6%97%A0%E6%B3%95ping%E9%80%9A%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95"><span class="post-toc-text">亚马逊AWS实例无法ping通的解决方法</span></a></li></ol>
         
-        
+        <h1 id="亚马逊AWS实例无法ping通的解决方法"><a href="#亚马逊AWS实例无法ping通的解决方法" class="headerlink" title="亚马逊AWS实例无法ping通的解决方法"></a>亚马逊AWS实例无法ping通的解决方法</h1><p>有时实例明明正在运行，主机也能connect，但却无法ping通，这是怎么回事呢？</p>
+<pre><code class="powershell">PS C:\Users\administrator&gt; ping 18.111.117.26
+
+Pinging 18.111.117.26 with 32 bytes of data:
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+
+Ping statistics for 18.111.117.26:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+</code></pre>
+<p>这是因为ping是向服务器发送ICMP的数据包，如果主机的防火墙不允许ICMP协议的数据包，那么即使服务器正常运行，也是ping不通的。那么我们只要修改亚马逊实例的入站规则就可以了。</p>
+<hr>
+<p><img src="/./../img/image-20230523174200603.png" alt="image-20230523174200603"></p>
+<hr>
+<p>如上图添加允许ICMP的规则后再ping就通了。</p>
+<pre><code class="powershell">PS C:\Users\administrator&gt; ping 18.111.117.26
+
+Pinging 18.111.117.26 with 32 bytes of data:
+Reply from 18.111.117.26: bytes=32 time=82ms TTL=43
+Reply from 18.111.117.26: bytes=32 time=81ms TTL=43
+Reply from 18.111.117.26: bytes=32 time=81ms TTL=43
+Reply from 18.111.117.26: bytes=32 time=81ms TTL=43
+
+Ping statistics for 18.111.117.26:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 81ms, Maximum = 82ms, Average = 81ms
+</code></pre>
+
     </div>
 
     <div class="post-meta">
