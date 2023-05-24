@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  viewport-fit=cover" name="viewport" />
+    <meta name="description" content="HTML语言" />
+    <link rel="alternate icon" type="image/webp" href="/img/favicon.webp">
+    <title>Note it all | Just note it</title>
+
+    
+        
+            
+<link rel="stylesheet" href="https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/reset.css">
+
+            
+<link rel="stylesheet" href="https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/markdown.css">
+
+            
+<link rel="stylesheet" href="https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/fonts.css">
+ 
+            <!--注意：首页既不是post也不是page-->
+            
+        
+    
+    
+<link rel="stylesheet" href="/css/ui.css">
+ 
+    
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+    
+    <body>
+        <div class="paper">
+            
+            
+            
+            
+                <div class="shadow-drop-2-bottom paper-main">
+                    
+<div class="header">
+    <div class="header-container">
+        <img style="
+        width: 56px;
+        height: auto;" alt="^-^" cache-control="max-age=86400" class="header-img" src="/img/favicon.webp" width="10%"></img>
+        <div class="header-content">
+            <a class="logo" href="/">Note it all</a> 
+            <span class="description"></span> 
+        </div>
+        
+    </div>
+    
+   
+    <ul class="nav">
+        
+            
+                <li><a href="/">首页</a></li>
+            
+        
+            
+                <li><a href="/list/">文章</a></li>
+            
+        
+    </ul>
+</div> 
+        
+                    
+                    
+
+                    
+                    
+                    
+                    <!--说明是文章post页面-->
+                    
+                        <div class="post-main">
+
+    
+        <div class="post-main-title">
+            HTML语言
+        </div>
+      
+    
+
+    <div class="post-md">
+        
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#HTML%E8%AF%AD%E8%A8%80"><span class="post-toc-text">HTML语言</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#A-Simple-HTML-Document"><span class="post-toc-text">A Simple HTML Document</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%9F%A5%E7%9C%8B%E7%BD%91%E9%A1%B5%E7%9A%84%E6%BA%90%E4%BB%A3%E7%A0%81"><span class="post-toc-text">查看网页的源代码</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E6%9F%A5%E7%9C%8BHTML%E6%BA%90%E4%BB%A3%E7%A0%81%EF%BC%9A"><span class="post-toc-text">查看HTML源代码：</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E6%A3%80%E6%9F%A5%E4%B8%80%E4%B8%AAHTML%E5%85%83%E7%B4%A0%EF%BC%9A"><span class="post-toc-text">检查一个HTML元素：</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#HTML-Attributes"><span class="post-toc-text">HTML Attributes</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%A0%87%E9%A2%98"><span class="post-toc-text">标题</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%AD%A3%E6%96%87"><span class="post-toc-text">正文</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#HTML-Styles"><span class="post-toc-text">HTML Styles</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%96%87%E6%9C%AC%E6%A0%BC%E5%BC%8F"><span class="post-toc-text">文本格式</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Quotation-and-Citation-Elements"><span class="post-toc-text">Quotation and Citation Elements</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Comments"><span class="post-toc-text">Comments</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Colors"><span class="post-toc-text">Colors</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#RGB-and-RGBA"><span class="post-toc-text">RGB and RGBA</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#HEX"><span class="post-toc-text">HEX</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#HSL-and-HSLA"><span class="post-toc-text">HSL and HSLA</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#style-CSS"><span class="post-toc-text">style - CSS</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#CSS-Colors-Fonts-and-Sizes"><span class="post-toc-text">CSS Colors, Fonts and Sizes</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#links"><span class="post-toc-text">links</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Bookmarks"><span class="post-toc-text">Bookmarks</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%9B%BE%E7%89%87image"><span class="post-toc-text">图片image</span></a></li></ol></li></ol>
+        
+        <h1 id="HTML语言"><a href="#HTML语言" class="headerlink" title="HTML语言"></a>HTML语言</h1><p>HTML中文全名叫做：<strong>“<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=%E8%B6%85%E6%96%87%E6%9C%AC%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:66691794%7D">超文本标记语言</a>”</strong>。超文本的意思就是不止是文本，还可以包含图片，链接，音乐，甚至程序等非文字元素。web developer使用html语言告诉浏览器如何生成网页。</p>
+<pre><code class="mermaid">flowchart LR
+    A[HTML&lt;br&gt;CSS&lt;br&gt;javascript&lt;br&gt;...] --&gt; B(浏览器)
+    B --&gt; C[网页]
+</code></pre>
+<h2 id="A-Simple-HTML-Document"><a href="#A-Simple-HTML-Document" class="headerlink" title="A Simple HTML Document"></a>A Simple HTML Document</h2><p>HTML语言不区分大小写，但推荐全使用<strong>小写</strong>。</p>
+<pre><code class="html">&lt;!-- 声明文档类型为html5,所有html文档必须有此声明，必须在最开始且只能声明一次--&gt;
+&lt;!DOCTYPE html&gt;					
+&lt;!-- &lt;html&gt;作为整个html文件的起始--&gt;
+&lt;html lang="en-US"&gt;							
+    &lt;!--  &lt;head&gt;作为meta information元信息的起始 lang是声明网页语言--&gt;
+    &lt;head&gt;						
+         &lt;!--  显示在浏览器标签上的标题--&gt;
+        &lt;title&gt;Page Title&lt;/title&gt;		
+      &lt;/head&gt;
+    
+    &lt;!-- &lt;body&gt;作为网页主体的起始--&gt;
+    &lt;body&gt;							
+        &lt;!--  一级标题，按重要性一共分6级，分别为h1到h6--&gt;
+        &lt;h1&gt;My First Heading&lt;/h1&gt;	
+        &lt;!-- break打断，新起一行--&gt;
+        &lt;br&gt;						
+        &lt;!-- paragraph段落，也即正文--&gt;
+        &lt;p&gt;My first paragraph.&lt;/p&gt;	
+        &lt;!-- 使用红色--&gt;
+        &lt;p style="color:red;"&gt;This is a red paragraph.&lt;/p&gt;
+        &lt;!-- a: Anker（锚）--&gt;
+        &lt;!-- href: hypertext reference(超文本引用)--&gt;
+        &lt;a href="https://www.w3schools.com"&gt;This is a link&lt;/a&gt;
+           &lt;!-- 图片，src为图片的路径，alt为替代文字--&gt;
+        &lt;img src="w3schools.jpg" alt="W3Schools.com替代文字" width="104" height="142"&gt;
+    
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h2 id="查看网页的源代码"><a href="#查看网页的源代码" class="headerlink" title="查看网页的源代码"></a>查看网页的源代码</h2><h3 id="查看HTML源代码："><a href="#查看HTML源代码：" class="headerlink" title="查看HTML源代码："></a>查看HTML源代码：</h3><p>在一个HTML页面上点击右键，选择 “查看页面源代码”（在Chrome中）或 “查看源代码”（在Edge中），或在其他浏览器中选择类似的选项。这将打开一个包含该页面HTML源代码的窗口。</p>
+<h3 id="检查一个HTML元素："><a href="#检查一个HTML元素：" class="headerlink" title="检查一个HTML元素："></a>检查一个HTML元素：</h3><p>在一个元素（或一个空白区域）上点击右键，选择 “检查 “或 “检查元素”，就可以看到哪些元素是由什么组成的（你会同时看到HTML和CSS）。你也可以在打开的元素或样式面板中即时编辑HTML或CSS。</p>
+<h2 id="HTML-Attributes"><a href="#HTML-Attributes" class="headerlink" title="HTML Attributes"></a>HTML Attributes</h2><p>HTML 元素可以有多个参数，参数应当包含在元素的起始标签中，格式为**name=”value”**。</p>
+<pre><code class="html">&lt;p title="当鼠标悬停时显示我"&gt;This is a paragraph.&lt;/p&gt;
+</code></pre>
+<p>value两侧加单引号或双引号，但有时候当想显示双引号时，必须使用单引号外括，反之亦然。</p>
+<pre><code class="html">&lt;p title='John "ShotGun" Nelson'&gt;鼠标悬停时显示双引号&lt;/p&gt;
+&lt;p title="John 'ShotGun' Nelson"&gt;鼠标悬停时显示单引号&lt;/p&gt;
+</code></pre>
+<p>完整的HTML参数见：<a target="_blank" rel="noopener" href="https://www.w3schools.com/tags/ref_attributes.asp">HTML Attribute Reference</a>。</p>
+<hr>
+<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><pre><code class="html">&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;
+</code></pre>
+<p>标题并非只是加大加粗而已，这是一种专门类别的文字，可以帮助搜索引擎索引到你的页面上来。</p>
+<p>各种标题有默认的大小，当然也可以自定义size</p>
+<pre><code class="html">&lt;h1 style="font-size:60px;"&gt;Heading 1&lt;/h1&gt;
+</code></pre>
+<hr>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><pre><code class="html">&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;p&gt;This is another paragraph.&lt;/p&gt;
+</code></pre>
+<p><code>&lt;hr&gt;</code>可以加一条水平分割线  (hr: <em>horizontal line</em>)</p>
+<p><code>&lt;br&gt;</code>可以加一个分割，形成新行 (br: <em>break</em>)</p>
+<pre><code class="html">&lt;h1&gt;This is heading 1&lt;/h1&gt;
+&lt;p&gt;This is some text.&lt;/p&gt;
+&lt;hr&gt;
+&lt;br&gt;
+&lt;h2&gt;This is heading 2&lt;/h2&gt;
+&lt;p&gt;This is some other text.&lt;/p&gt;
+</code></pre>
+<p>浏览器会自动忽略正文中的空格、回车等标记，下面的诗会显示到一行</p>
+<pre><code class="html">&lt;p&gt;
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+&lt;/p&gt;
+</code></pre>
+<p>为解决这个问题，可以使用pre标签</p>
+<p><code>&lt;pre&gt;</code>可以保存段落的空格和分行号 (pre: <em>preserve</em>)</p>
+<pre><code class="html">&lt;pre&gt;
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+&lt;/pre&gt;
+</code></pre>
+<hr>
+<h2 id="HTML-Styles"><a href="#HTML-Styles" class="headerlink" title="HTML Styles"></a>HTML Styles</h2><p>格式为</p>
+<pre><code class="html">&lt;tagname style="property:value;"&gt;
+</code></pre>
+<p>下面命令可以使段落变红、蓝、尺寸变大</p>
+<pre><code class="html">&lt;p&gt;I am normal&lt;/p&gt;
+&lt;p style="color:red;"&gt;I am red&lt;/p&gt;
+&lt;p style="color:blue;"&gt;I am blue&lt;/p&gt;
+&lt;p style="font-size:50px;"&gt;I am big&lt;/p&gt;
+</code></pre>
+<p>将正文的背景换色(默认白色)</p>
+<pre><code class="html">&lt;body style="background-color:powderblue;"&gt;
+
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+</code></pre>
+<p>将单独的元素背景换色</p>
+<pre><code class="html">&lt;body&gt;
+
+&lt;h1 style="background-color:powderblue;"&gt;This is a heading&lt;/h1&gt;
+&lt;p style="background-color:tomato;"&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+</code></pre>
+<p>改变元素的颜色</p>
+<pre><code class="html">&lt;h1 style="color:blue;"&gt;This is a heading&lt;/h1&gt;
+&lt;p style="color:red;"&gt;This is a paragraph.&lt;/p&gt;
+</code></pre>
+<p>改变字体</p>
+<pre><code class="html">&lt;h1 style="font-family:verdana;"&gt;This is a heading&lt;/h1&gt;
+&lt;p style="font-family:courier;"&gt;This is a paragraph.&lt;/p&gt;
+</code></pre>
+<p>改变字的大小</p>
+<pre><code class="html">&lt;h1 style="font-size:300%;"&gt;This is a heading&lt;/h1&gt;
+&lt;p style="font-size:160%;"&gt;This is a paragraph.&lt;/p&gt;
+</code></pre>
+<p>改变字的对齐方式</p>
+<pre><code class="html">&lt;h1 style="text-align:center;"&gt;Centered Heading&lt;/h1&gt;
+&lt;p style="text-align:center;"&gt;Centered paragraph.&lt;/p&gt;
+</code></pre>
+<hr>
+<h2 id="文本格式"><a href="#文本格式" class="headerlink" title="文本格式"></a>文本格式</h2><ul>
+<li><code>&lt;b&gt;</code> - Bold text</li>
+<li><code>&lt;strong&gt;</code> - Important text</li>
+<li><code>&lt;i&gt;</code> - Italic text</li>
+<li><code>&lt;em&gt;</code> - Emphasized text</li>
+<li><code>&lt;mark&gt;</code> - Marked text</li>
+<li><code>&lt;small&gt;</code> - Smaller text</li>
+<li><code>&lt;del&gt;</code> - Deleted text</li>
+<li><code>&lt;ins&gt;</code> - Inserted text</li>
+<li><code>&lt;sub&gt;</code> - Subscript text</li>
+<li><code>&lt;sup&gt;</code> - Superscript text</li>
+</ul>
+<p>可以将文本变小</p>
+<pre><code class="html">&lt;small&gt;This is some smaller text.&lt;/small&gt;
+</code></pre>
+<p>删除线</p>
+<pre><code class="html">&lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; red.&lt;/p&gt;
+</code></pre>
+<p>插入文字，通常下面加一条下划线</p>
+<pre><code class="html">&lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; &lt;ins&gt;red&lt;/ins&gt;.&lt;/p&gt;
+</code></pre>
+<p>文字下标、上标</p>
+<pre><code class="html">&lt;p&gt;This is &lt;sub&gt;subscripted&lt;/sub&gt; text.&lt;/p&gt;
+&lt;p&gt;This is &lt;sup&gt;superscripted&lt;/sup&gt; text.&lt;/p&gt;
+</code></pre>
+<hr>
+<h2 id="Quotation-and-Citation-Elements"><a href="#Quotation-and-Citation-Elements" class="headerlink" title="Quotation and Citation Elements"></a>Quotation and Citation Elements</h2><ul>
+<li><p><code>&lt;blockquote&gt;</code> - 插入一段引用，自动缩进</p>
+</li>
+<li><p><code>&lt;q&gt;</code> - 插入一句话，两侧自动添加上引号</p>
+</li>
+<li><p><code>&lt;abbr&gt;</code> - 缩写，自动加虚下划线</p>
+</li>
+<li><p><code>&lt;address&gt;</code> - 地址，自动斜体</p>
+</li>
+<li><p><code>&lt;cite&gt;</code> - 引用，自动斜体 </p>
+</li>
+<li><p><code>&lt;bdo&gt;</code> - bi-directional override</p>
+</li>
+</ul>
+<pre><code class="html">&lt;p&gt;WWF's goal is to: &lt;q&gt;Build a future where people live in harmony with nature.&lt;/q&gt;&lt;/p&gt;
+</code></pre>
+<p>缩写，自动，在下面加上虚下划线。title是鼠标悬停时显示的内容</p>
+<pre><code class="html">&lt;p&gt;The &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt; was founded in 1948.&lt;/p&gt;
+</code></pre>
+<p>bdo需要指定方向。dir只有两种方向，rtl即right to left，ltr即left to right。</p>
+<pre><code class="html">&lt;bdo dir="rtl"&gt;This text will be written from right to left&lt;/bdo&gt;
+</code></pre>
+<p>本节内容其实不太常用，具体可见<a target="_blank" rel="noopener" href="https://www.w3schools.com/html/html_quotation_elements.asp">这里</a>。</p>
+<hr>
+<h2 id="Comments"><a href="#Comments" class="headerlink" title="Comments"></a>Comments</h2><pre><code class="html">&lt;!-- Write your comments here --&gt;
+&lt;!-- &lt;p&gt;This is another paragraph &lt;/p&gt; --&gt;
+</code></pre>
+<p>可用于在html文本中添加说明，或临时隐藏某段话。</p>
+<hr>
+<h2 id="Colors"><a href="#Colors" class="headerlink" title="Colors"></a>Colors</h2><p>加背景色</p>
+<pre><code class="html">&lt;h1 style="background-color:DodgerBlue;"&gt;Hello World&lt;/h1&gt;
+&lt;p style="background-color:Tomato;"&gt;Lorem ipsum...&lt;/p&gt;
+</code></pre>
+<p>加文字颜色</p>
+<pre><code class="html">&lt;h1 style="color:Tomato;"&gt;Hello World&lt;/h1&gt;
+&lt;p style="color:DodgerBlue;"&gt;Lorem ipsum...&lt;/p&gt;
+</code></pre>
+<p>加边框颜色</p>
+<pre><code class="html">&lt;h1 style="border:2px solid Tomato;"&gt;Hello World&lt;/h1&gt;
+&lt;h1 style="border:2px solid DodgerBlue;"&gt;Hello World&lt;/h1&gt;
+</code></pre>
+<p>颜色也可以用RGB值、HEX值、HSL值、RGBA值和HSLA值来指定。</p>
+<pre><code class="html">&lt;!-- 下面这三种都是橘红色 --&gt;
+&lt;h1 style="background-color:rgb(255, 99, 71);"&gt;...&lt;/h1&gt;
+&lt;h1 style="background-color:#ff6347;"&gt;...&lt;/h1&gt;
+&lt;h1 style="background-color:hsl(9, 100%, 64%);"&gt;...&lt;/h1&gt;
+
+&lt;!-- alpha代表透明度 transparency --&gt;
+&lt;h1 style="background-color:rgba(255, 99, 71, 0.5);"&gt;...&lt;/h1&gt;
+&lt;h1 style="background-color:hsla(9, 100%, 64%, 0.5);"&gt;...&lt;/h1&gt;
+</code></pre>
+<h3 id="RGB-and-RGBA"><a href="#RGB-and-RGBA" class="headerlink" title="RGB and RGBA"></a>RGB and RGBA</h3><p><strong>rgb(<em>red, green, blue</em>)</strong></p>
+<p><strong>rgba(<em>red, green, blue, alpha</em>)</strong></p>
+<p>alpha=0时完全透明，alpha=1时完全不透明</p>
+<h3 id="HEX"><a href="#HEX" class="headerlink" title="HEX"></a>HEX</h3><p>格式#RRGGBB, 其中 RR (red)，GG (green) ，BB (blue)</p>
+<p>比如黑色#000000，白色#ffffff</p>
+<h3 id="HSL-and-HSLA"><a href="#HSL-and-HSLA" class="headerlink" title="HSL and HSLA"></a>HSL and HSLA</h3><p><strong>hsl(<em>hue, saturation, lightness</em>)</strong></p>
+<p><strong>hsla(<em>hue, saturation, lightness, alpha</em>)</strong></p>
+<p>Hue 色相是色轮上从0到360的一个度数。0是红色，120是绿色，而240是蓝色。</p>
+<p>Saturation 饱和度是一个百分比值。0%意味着灰色的阴影，而100%是完整的颜色。</p>
+<p>Lightness 明度也是一个百分比值。0%是黑色，100%是白色。</p>
+<hr>
+<h2 id="style-CSS"><a href="#style-CSS" class="headerlink" title="style - CSS"></a>style - CSS</h2><p>CSS 即 <em>Cascading Style Sheets</em> （<em>层级样式表</em>）层级的意思是，如果你在父元素施加了红色的文字颜色，那么子元素也会自动有红色的文字颜色，除非再另行指定。</p>
+<p>CSS 有三种施加方式</p>
+<ul>
+<li><strong>Inline</strong> - 在元素内加<code>style</code>参数</li>
+<li><strong>Internal</strong> - 在<code>&lt;head&gt;</code>段内加<code>&lt;style&gt;</code>元素</li>
+<li><strong>External</strong> - 使用<code>&lt;link&gt;</code>元素链到一个外部CSS文件。</li>
+</ul>
+<p>Inline 的例子</p>
+<pre><code class="html">&lt;h1 style="color:blue;"&gt;A Blue Heading&lt;/h1&gt;
+
+&lt;p style="color:red;"&gt;A red paragraph.&lt;/p&gt;
+</code></pre>
+<p>Internal 的例子</p>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>External 的例子</p>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>styles.css</p>
+<pre><code class="css">body {
+  background-color: powderblue;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+}
+</code></pre>
+<p>可见，如果想修改多个网页的格式，只需要修改这个css文件即可，这是很方便的。</p>
+<h3 id="CSS-Colors-Fonts-and-Sizes"><a href="#CSS-Colors-Fonts-and-Sizes" class="headerlink" title="CSS Colors, Fonts and Sizes"></a>CSS Colors, Fonts and Sizes</h3><p><code>color</code> 颜色</p>
+<p><code>font-family</code> 字体</p>
+<p><code>font-size</code> 字体大小</p>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+h1 {
+  color: blue;
+  font-family: verdana;
+  font-size: 300%;
+}
+p {
+  color: red;
+  font-family: courier;
+  font-size: 160%;
+  border: 2px solid powderblue
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p><code>border</code> 边框</p>
+<p><code>padding</code> 边框内距</p>
+<p><code>margin</code> 边框外距</p>
+<pre><code class="css">p {
+  border: 2px solid powderblue;
+  padding: 30px;
+  margin: 50px;
+}
+</code></pre>
+<p>链接到外部CSS文件，分别是url地址，相对路径，当前文件夹。</p>
+<pre><code class="css">&lt;link rel="stylesheet" href="https://www.w3schools.com/html/styles.css"&gt;
+&lt;link rel="stylesheet" href="/html/styles.css"&gt;
+&lt;link rel="stylesheet" href="styles.css"&gt;
+</code></pre>
+<hr>
+<h2 id="links"><a href="#links" class="headerlink" title="links"></a>links</h2><p>语法</p>
+<pre><code class="html">&lt;a href="url"&gt;link text&lt;/a&gt;
+</code></pre>
+<p>例子</p>
+<pre><code class="html">&lt;a href="https://www.w3schools.com/" target="_blank"&gt;Visit W3Schools!&lt;/a&gt;
+</code></pre>
+<p><code>target</code> 参数</p>
+<ul>
+<li><code>_self</code> - 在自身窗口打开</li>
+<li><code>_blank</code> - 在一个空窗口打开</li>
+<li><code>_parent</code> - 仅父框架跳转</li>
+<li><code>_top</code> - 整个窗口一起跳转</li>
+</ul>
+<p>使用图片做超链接</p>
+<pre><code class="html">&lt;a href="default.asp"&gt;
+&lt;img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"&gt;
+&lt;/a&gt;
+</code></pre>
+<p>使用邮件做超链接</p>
+<pre><code class="html">&lt;a href="mailto:someone@example.com"&gt;Send email&lt;/a&gt;
+</code></pre>
+<p>使用按钮做超链接</p>
+<pre><code class="html">&lt;button onclick="document.location='default.asp'"&gt;HTML Tutorial&lt;/button&gt;
+</code></pre>
+<p><code>title</code> - 鼠标悬停时显示的内容</p>
+<pre><code class="html">&lt;a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section"&gt;Visit our HTML Tutorial&lt;/a&gt;
+</code></pre>
+<p>可以对链接的各种情况进行定制</p>
+<pre><code class="css">&lt;style&gt;
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+&lt;/style&gt;
+</code></pre>
+<hr>
+<h2 id="Bookmarks"><a href="#Bookmarks" class="headerlink" title="Bookmarks"></a>Bookmarks</h2><p>创建一个书签，并建立一个链接跳至这个书签。</p>
+<pre><code class="css">&lt;h2 id="C4"&gt;Chapter 4&lt;/h2&gt;
+&lt;a href="#C4"&gt;Jump to Chapter 4&lt;/a&gt;
+&lt;a href="html_demo.html#C4"&gt;Jump to Chapter 4&lt;/a&gt;
+</code></pre>
+<hr>
+<h2 id="图片image"><a href="#图片image" class="headerlink" title="图片image"></a>图片image</h2><pre><code class="css">&lt;img src="pic_trulli.jpg" alt="Italian Trulli"&gt;
+</code></pre>
+<p><code>alt </code> 中为图片无法显示时呈现的内容</p>
+<p>指定其宽和高</p>
+<pre><code class="css">&lt;img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;"&gt;
+</code></pre>
+<pre><code class="css">&lt;img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600"&gt;
+</code></pre>
+<p>也可在<code>&lt;head&gt;</code>中指定全部 <em>img</em> 的格式</p>
+<pre><code class="css">&lt;style&gt;
+/* This style sets the width of all images to 100%: */
+img {
+  width: 100%;
+}
+&lt;/style&gt;
+</code></pre>
+<p>使用CSS  <code>float</code> 属性使图片处在段落的右边或左边</p>
+<pre><code class="html">&lt;p&gt;&lt;img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;"&gt;
+The image will float to the right of the text.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;"&gt;
+The image will float to the left of the text.&lt;/p&gt;
+</code></pre>
+
+    </div>
+
+    <div class="post-meta">
+        <i>
+        
+            <span>2023-05-24</span>
+            
+            
+             
+        
+        </i>
+    </div>
+    
+        
+
+     
+</div>
+
+
+
+                    
+                    
+                    <div class="footer">
+    
+        <span> 
+            © 1949-2023 China 
+
+            
+                
+
+            
+        </span>
+    
+</div>
+<!--这是指一条线往下的内容-->
+<div class="footer-last">
+    
+            <span>🌊看过大海的人不会忘记海的广阔🌊</span>
+            
+                <span class="footer-last-span-right"><i>本站由<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/index.html">Hexo</a>驱动｜使用<a target="_blank" rel="noopener" href="https://github.com/HiNinoJay/hexo-theme-A4">Hexo-theme-A4</a>主题</i></span>
+            
+    
+</div>
+
+
+    
+        
+<link rel="stylesheet" href="https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/a11y-dark.min.css">
+
+        
+<script src="https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/js/highlight.min.js"></script>
+
+        
+<script src="https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/js/highlightjs-line-numbers.js"></script>
+
+    
+
+
+<script>
+    hljs.initHighlightingOnLoad();
+    hljs.initLineNumbersOnLoad();
+</script>
+                </div>
+            
+    </body>
+</html>
